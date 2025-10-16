@@ -1,39 +1,39 @@
 {
-    "基酒": [
+    "Licor Base": [
         {
-            "name": "去冰"
+            "name": "Sin Hielo"
         },
         {
-            "name": "加火"
+            "name": "Caliente"
         },
         {
-            "name": "加檸檬"
+            "name": "Con Limón"
         }
     ],
-    "熱食": [
+    "Comida Caliente": [
         {
-            "name": "要辣"
+            "name": "Picante"
         },
         {
-            "name": "不要辣"
+            "name": "No Picante"
         },
         {
-            "name": "加大"
+            "name": "Grande"
         },
         {
-            "name": "特大"
+            "name": "Extra Grande"
         }
 
     ],
-    "特調": [
+    "Cóctel Especial": [
         {
-            "name": "去冰"
+            "name": "Sin Hielo"
         },
         {
-            "name": "加火"
+            "name": "Caliente"
         },
         {
-            "name": "加檸檬"
+            "name": "Con Limón"
         }
     ]
 }

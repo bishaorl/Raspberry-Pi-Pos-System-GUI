@@ -5,16 +5,16 @@ class Calculator:
         _width, _height = frame["width"], frame["height"]
         _button_size = (int(_width*0.02), int(_height*0.03))
         _buttons = {
-                "加一項": (0, 0, 0, 0),
-                "加五項": (0, 1, 0, 0),
-                "減一項": (0, 2, 0, 0),
-                "刪除": (0, 3, 0, 0)
+                "Agregar uno": (0, 0, 0, 0),
+                "Agregar cinco": (0, 1, 0, 0),
+                "Restar uno": (0, 2, 0, 0),
+                "Eliminar": (0, 3, 0, 0)
         }
         _callback = {
-            "加一項": lambda: self.add_n_item(1),
-            "加五項": lambda: self.add_n_item(5),
-            "減一項": lambda:self.minus_one_item(),
-            "刪除": lambda: self.delete_item(),
+            "Agregar uno": lambda: self.add_n_item(1),
+            "Agregar cinco": lambda: self.add_n_item(5),
+            "Restar uno": lambda:self.minus_one_item(),
+            "Eliminar": lambda: self.delete_item(),
         }
 
         _fonts = {
@@ -44,7 +44,7 @@ class Calculator:
 
             "00" : (3, 0, 0, 0),
             "0" : (3, 1, 0, 0),
-            "清除": (3, 2, 0, 0)
+            "Limpiar": (3, 2, 0, 0)
         }
         _fonts = {
             "bg": "white",
@@ -57,7 +57,7 @@ class Calculator:
             "7" : lambda: self.press_number("7"),
             "8" : lambda: self.press_number("8"),
             "9" : lambda: self.press_number("9"),
-            
+
             "4" : lambda: self.press_number("4"),
             "5" : lambda: self.press_number("5"),
             "6" : lambda: self.press_number("6"),
@@ -68,7 +68,7 @@ class Calculator:
 
             "00" : lambda: self.press_number("00"),
             "0" : lambda: self.press_number("0"),
-            "清除": lambda: self.press_clear("0")
+            "Limpiar": lambda: self.press_clear("0")
         }
 
         self.grid_buttons(frame, _button_size, _buttons, _fonts, _call_back)
@@ -99,11 +99,11 @@ class Cashier:
 
     def _create_checkout_info(self):
         labels = {
-            "數 量  : ": (0, self.casher_height*0.02),
-            "總 計  : ": (0, self.casher_height*0.14),
+            "Cantidad: ": (0, self.casher_height*0.02),
+            "Total: ": (0, self.casher_height*0.14),
 
-            "現 金  : ": (0, self.casher_height*0.30),
-            "找 零  : ": (0, self.casher_height*0.42),
+            "Efectivo: ": (0, self.casher_height*0.30),
+            "Cambio: ": (0, self.casher_height*0.42),
         }
         _label_size = (self.casher_width*0.015, self.casher_height*0.003)
         self.create_labels(self.casher_frame, _label_size, labels)
@@ -130,10 +130,10 @@ class Cashier:
         _grid_x1, _grid_y1 = self.casher_width*0.36, self.casher_height*0.71
 
         _buttons = {
-            "折扣": (_grid_x0, _grid_y0),
-            "信用卡": (_grid_x1, _grid_y0),
-            "小計": (_grid_x0, _grid_y1),
-            "結帳": (_grid_x1, _grid_y1),
+            "Descuento": (_grid_x0, _grid_y0),
+            "Tarjeta de Crédito": (_grid_x1, _grid_y0),
+            "Subtotal": (_grid_x0, _grid_y1),
+            "Pagar": (_grid_x1, _grid_y1),
         }
         _button_size = (self.casher_width*0.017, self.casher_height*0.004)
         _fonts = {
@@ -216,10 +216,10 @@ class Receipt:
         frame.pack_propagate(False)
 
         tree_dict = {
-            'No': (tree_size[0], "No"), 
-            'Name': (int(tree_size[0]*6.5), "名稱"), 
-            'Unit': (tree_size[0], "數量"), 
-            'Amount': (tree_size[0], "小記")
+            'No': (tree_size[0], "No"),
+            'Name': (int(tree_size[0]*6.5), "Nombre"),
+            'Unit': (tree_size[0], "Cantidad"),
+            'Amount': (tree_size[0], "Monto")
         }
 
         _font = ('Adobe 黑体 Std R', 20, 'normal')

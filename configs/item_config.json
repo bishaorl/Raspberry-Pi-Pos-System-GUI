@@ -1,55 +1,55 @@
 {
-    "基酒": [
+    "Licor Base": [
         {
-            "name": "琴酒-琴通寧",
+            "name": "Ginebra - Gin Tonic",
             "price": "150"
         },
         {
-            "name": "紅酒-可爾必思",
+            "name": "Vino Tinto - Calpis",
             "price": "150"
         },
         {
-            "name": "威土忌-可樂",
+            "name": "Whisky - Coca Cola",
             "price": "150"
         },
         {
-            "name": "龍舌蘭-日出",
+            "name": "Tequila - Sunrise",
             "price": "150"
         },
         {
-            "name": "伏特加-螺絲起子",
+            "name": "Vodka - Screwdriver",
             "price": "150"
         },
         {
-            "name": "萊姆酒-自由古巴",
+            "name": "Ron - Cuba Libre",
             "price": "150"
         }
     ],
-    "熱食": [
+    "Comida Caliente": [
         {
-            "name": "炒泡麵",
+            "name": "Fideos Fritos Instantáneos",
             "price": "100"
         },
         {
-            "name": "胡麻炒麵",
+            "name": "Fideos Fritos con Sésamo",
             "price": "120"
         }
     ],
-    "特調": [
+    "Cóctel Especial": [
         {
-            "name": "續攤特調",
+            "name": "Cóctel de Continuación",
             "price": "200"
         },
         {
-            "name": "長島冰茶",
+            "name": "Long Island Iced Tea",
             "price": "200"
         },
         {
-            "name": "SHOT/杯",
+            "name": "SHOT/Copa",
             "price": "100"
         },
         {
-            "name": "SHOT/盤",
+            "name": "SHOT/Plato",
             "price": "500"
         }
     ]

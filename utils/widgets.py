@@ -9,7 +9,7 @@ class CustomButtons:
         _height = int(self.max_h*0.002)
         _width = int(self.max_w*0.003)
         exit_button = Button(frame, command=self.root.destroy, \
-            text="離開", font=self.button_font, bd=3, \
+            text="Salir", font=self.button_font, bd=3, \
             height=_height, width=_width)
         exit_button.place(x=int(position[0]), y=int(position[1]))
 
@@ -18,7 +18,7 @@ class CustomButtons:
         _height = int(self.max_h*0.002)
         _width = int(self.max_w*0.003)
         exit_button = Button(frame, command=self.clear_receipt, \
-            text="清除\n訂單", font=self.button_font, bd=3,\
+            text="Limpiar\nPedido", font=self.button_font, bd=3,\
             height=_height, width=_width)
         exit_button.place(x=int(position[0]), y=int(position[1]))
 
